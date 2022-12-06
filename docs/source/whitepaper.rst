@@ -90,5 +90,13 @@ It is very unlikely that all the zones are exploited by hackers at the same time
 The whole picture
 -------------------
 
-Now, the whole picture of ElfinHost is here: it needs recryptors and authorizers running inside several enclave zones to provide services; the authors use smart contracts for files' access control; the audience rely on authorizers to grant requests, and recryptors to decrypt files on IPFS (or other decentralized storages).
+Now, we can present the whole picture of ElfinHost:
+
+.. image:: elfinhost_architecture.png
+
+The author uses smart contracts to program files' access control and uploads files to the recryptors run by CDN providers. The recryptors encrypt files and store them onto the decentralized storages.
+
+When the audience wants to view a file, she must connect to a recryptor that can load the file out from the decentralized storages. The recryptor will request the authorizor for granting the decryption of the file. When recryptor decrypts the file, the audience can download it.
+
+The author programs smart contracts to specify what behaviors on blockchains can qualify the audience to view the file. Usually the behavior is a payment: the audience pay the author directly, pay for NFTs, etc. The authorizor read the blockchain's status to judge whether such behavior happened before, and whether to grant the recryptors for decryption.
 
