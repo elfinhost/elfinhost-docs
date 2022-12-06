@@ -217,6 +217,7 @@ An authorizer provides four RPC endpoints to support the mentioned primitives. A
 In recryptor mode, the recryptor calculates a secret with its private key and the authorizer's PubKey, and then uses this secret and the returned Salt to decrypt the returned Result to get VRF output.
 
 Endorse historical contract interaction
+------------------------------------
 
 The RPC endpiont's URL is like below:
 

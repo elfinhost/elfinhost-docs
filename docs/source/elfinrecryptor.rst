@@ -6,7 +6,7 @@ CDN providers run recryptors to serve the authors and audience.
 
 The authors and audience connect to recryptor enclaves through https links directly. Even the CDN providers do not know what are transferred through the TLS tunnel.
 
-The recryptor acts as a `RPCX(github.com/smallnest/rpcx)`_ client to get IPFS data from a RPCX server run by the same CDN provider.
+The recryptor acts as a `RPCX<https://github.com/smallnest/rpcx>`_ client to get IPFS data from a RPCX server run by the same CDN provider.
 
 Serve the author
 =====================
@@ -292,7 +292,7 @@ This RPC helps you get the readme.txt file and the config.json file in the Elfin
 Upload an immutable directory
 --------------------------------
 
-You can request the coordinator to upload an immutable directory onto IPFS by posting a `FormData(https://developer.mozilla.org/en-US/docs/Web/API/FormData)`_.
+You can request the coordinator to upload an immutable directory onto IPFS by posting a `FormData<https://developer.mozilla.org/en-US/docs/Web/API/FormData>`_.
 
 .. code-block::
 
