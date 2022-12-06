@@ -32,6 +32,7 @@ Metadata's schema
 The `schema(http://json-schema.org/learn/getting-started-step-by-step`_ of the "config.json" file is as follows:
 
 .. code-block::
+
   {
       "$schema": "http://json-schema.org/draft-04/schema#",
       "title": "ElfinHost Recryptor Configuration",
