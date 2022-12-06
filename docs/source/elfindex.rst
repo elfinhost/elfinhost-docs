@@ -17,7 +17,7 @@ Here we propose yet another solution: EA-DEX (Elfin-Authorized Decentralized EXc
 How it works
 ---------------------
 
-EA-DEX uses the following components to build a trading pair P\_token@X\_Chain/Q\_token@Y\_Chain:
+EA-DEX uses the following components to build a trading pair `P_token@X_Chain / Q_token@Y_Chain`:
 
 1. A reception contract on X chain accepts all the requests (buy token/sell token/mint liquidity/withdraw liquidity), and emits them as cross-chain request events. If necessary, it also locks the requestors' P token for some kinds of requests. 
 

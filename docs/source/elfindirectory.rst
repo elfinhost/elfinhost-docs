@@ -6,7 +6,7 @@ Elfin Directory: Arrange Permissioned Contents on Decentralized Storages
 
    Currently this document only specifies immutable directory on IPFS. Specifications for other decentralized storages will come soon.
 
-IPFS supports `Immutable Filesystem<https://docs.ipfs.tech/concepts/file-systems>`_, and a IPFS URL can actually `point to a directory<https://discuss.ipfs.tech/t/understanding-ipfs-directories/2219>`_.
+IPFS supports `Immutable Filesystem <https://docs.ipfs.tech/concepts/file-systems>`_, and a IPFS URL can actually `point to a directory <https://discuss.ipfs.tech/t/understanding-ipfs-directories/2219>`_.
 
 Sometimes we want to share several files as a whole through ElfinHost. For example:
 
@@ -29,7 +29,7 @@ As a convention, in the IPFS immutable directory:
 Metadata's schema
 -------------------
 
-The `schema<http://json-schema.org/learn/getting-started-step-by-step>`_ of the "config.json" file is as follows:
+The `schema <http://json-schema.org/learn/getting-started-step-by-step>`_ of the "config.json" file is as follows:
 
 .. code-block::
 
@@ -121,7 +121,7 @@ The `schema<http://json-schema.org/learn/getting-started-step-by-step>`_ of the 
 FormData for upload
 ------------------------
 
-To store a Elfin directory to IPFS, you must first submit the files that need encryption to the server side using the `encryptChunk` endpoint of the recryptor. After they are ready, you can upload the files in Elfin directory using `FormData<https://developer.mozilla.org/en-US/docs/Web/API/FormData>`_. A FormData object has several entries created using the `append<https://developer.mozilla.org/en-US/docs/Web/API/FormData/append>`_ method. Each entry has three attributes:
+To store a Elfin directory to IPFS, you must first submit the files that need encryption to the server side using the `encryptChunk` endpoint of the recryptor. After they are ready, you can upload the files in Elfin directory using `FormData <https://developer.mozilla.org/en-US/docs/Web/API/FormData>`_. A FormData object has several entries created using the `append <https://developer.mozilla.org/en-US/docs/Web/API/FormData/append>`_ method. Each entry has three attributes:
 
 1. name: the full name of the file. A Elfin directory can contain subdirectories. So the full name may contain "/".
 
