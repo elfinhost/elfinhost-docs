@@ -1,22 +1,25 @@
-Welcome to Lumache's documentation!
+Welcome to ElfinHost's documentation!
 ===================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+ElfinHost is an access-control protocol for decentralized file hosting. It is designed for the authors, the audience and CDN/NaaS providers. The authors use smart contract to program who can and how to access the contents, and CDN/NaaS providers build neutral channels, through which mass multimedia content can be delivered smoothly from the authors to the target audience. 
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+ElfinHost links the authors and audience directly and frictionlessly, without any intervention or censorship.
+
+ElfinHost help CDN/NaaS providers serve more customers and support brand-new use cases, which will bring them more earnings. Besides file access control, ElfinHost can also enable NaaS providers to act as cross-chain oracles.
+
+No access control, No ownership. In the Web3.0 era, ElfinHost is an important infrastructure to bring data ownership back to users.
 
 .. note::
 
-   This project is under active development.
+   The ElfinHost is still under active development. The documention here is not stale now.
 
 Contents
 --------
 
 .. toctree::
 
-   usage
-   api
+   whitepaper
+   elfinauthorizer
+   elfinrecryptor
+   elfindirectory
+   elfindex
