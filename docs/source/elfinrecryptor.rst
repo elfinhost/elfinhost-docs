@@ -298,7 +298,7 @@ You can request the coordinator to upload an immutable directory onto IPFS by po
 
    /eh_upload?session=<session-id>&recryptor=<domain-name-of-recryptor>
 
-The format of the FormData is introduced in the "FormData for upload" session of ElfinDirectory.md.
+The format of the FormData is introduced in the :ref:`elfindirectory:FormData for upload` section.
 
 The `recryptor` parameter gives the domain name of the recryptor who run `encryptChunk` for the encrypted files in the immutable directory.
 
