@@ -302,6 +302,8 @@ The format of the FormData is introduced in the :ref:`elfindirectory:FormData fo
 
 The `recryptor` parameter gives the domain name of the recryptor who run `encryptChunk` for the encrypted files in the immutable directory.
 
+This RPC endpoint will return the CID of the immutable directory.
+
 Proxy to Elfin Authorizers
 --------------------------
 
