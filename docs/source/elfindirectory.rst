@@ -121,11 +121,9 @@ The `schema <http://json-schema.org/learn/getting-started-step-by-step>`_ of the
 FormData for upload
 ------------------------
 
-To store a Elfin directory to IPFS, you must first submit the files that need encryption to the server side using the `encryptChunk` endpoint of the recryptor. After they are ready, you can upload the files in Elfin directory using `FormData <https://developer.mozilla.org/en-US/docs/Web/API/FormData>`_. A FormData object has several entries created using the `append <https://developer.mozilla.org/en-US/docs/Web/API/FormData/append>`_ method. Each entry has three attributes:
+To store a Elfin directory to IPFS, you must first submit the files that need encryption to the server side using the `encryptChunk` endpoint of the recryptor. After they are ready, you can upload the files in Elfin directory using `FormData <https://developer.mozilla.org/en-US/docs/Web/API/FormData>`_ (multipart/form-data). A FormData object should be created using the `append <https://developer.mozilla.org/en-US/docs/Web/API/FormData/append>`_ method, with the following arguments:
 
 1. name: the full name of the file. A Elfin directory can contain subdirectories. So the full name may contain "/".
 
-2. value: For a non-encrypted file, this is its Blob content. For an encrypted file, this is an empty string.
-
-3. filename: This is an optional attribute. For an encrypted file, this attribute should be a hex string representing its recryptorsalt. The server side daemon can use this recryptorsalt to retrieve an encrypted file's content from the recryptor.
+2. value: For a non-encrypted file, this is its Blob content. For an encrypted file, this is a hex string representing its recryptorsalt.
 

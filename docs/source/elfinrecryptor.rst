@@ -257,13 +257,15 @@ First, you get a random hex string through the following RPC endpoint.
 
 .. code-block::
 
-  /getNonce
+  /eh_getNonce
 
 Then, you sign this hex string using `personal_sign` and use the signature to call the following RPC endpoint:
 
 .. code-block::
 
-  /eh_getSessionID?sig=<hex-encoded-signature>
+  /eh_getSessionID?sig=<hex-encoded-signature>&nonce=<hex-encoded-nonce>
+
+The `nonce` parameter used to call `eh_getSessionID` must the returned value of `eh_getNonce`.
 
 A session ID is returned to you, which can be used in later requests.
 
@@ -292,7 +294,7 @@ This RPC helps you get the readme.txt file and the config.json file in the Elfin
 Upload an immutable directory
 --------------------------------
 
-You can request the coordinator to upload an immutable directory onto IPFS by posting a `FormData <https://developer.mozilla.org/en-US/docs/Web/API/FormData>`_.
+You can request the coordinator to upload an immutable directory onto IPFS by posting a `FormData <https://developer.mozilla.org/en-US/docs/Web/API/FormData>`_ (multipart/form-data).
 
 .. code-block::
 
